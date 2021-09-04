@@ -1,0 +1,66 @@
+.Lte-Container{
+  color:white;
+
+ &>ul.b {
+  list-style-type: square;
+  color:#84b82a;
+  
+}
+
+&>h1{
+  color:#84b82a;
+  padding:0;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin:0;
+  
+}
+
+&>h2{
+  padding:0;
+  color:#675190;
+  font-size:12px;
+  line-height: 0px;
+  margin:0;
+
+  padding-left: 10px;
+}
+&>h3{
+ padding-top: 15px;
+  padding-left: 10px;
+  font-size:13px;
+
+}
+
+.liinfo{
+  color:white;
+  font-size:12px;
+  }
+
+.bottom{
+  display:flex;
+  justify-content: flex-end;
+  align-items: top;
+
+  .bottomright{
+    color:#675190;
+    font-size:50px;
+    margin:0;
+    padding:0;
+    margin-right: 25px;
+      margin-top:-18px;
+      font-weight: bold;
+  }
+  .bottomleft{
+    color:#84b82a;
+     padding-right: 10px;
+   text-align: right;
+   line-height: 20px;
+   font-weight: bold;
+  }
+}
+
+
+
+}
+

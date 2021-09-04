@@ -1,0 +1,39 @@
+.slider{
+
+    width:100%;
+    height:100%;
+  
+}
+
+.sliderInner
+{
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+}
+
+
+.slideshowDots {
+    text-align: center;
+    margin-left: 90%;
+    margin-top:47%;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+   
+    cursor: pointer;
+    margin: 15px 4px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: white;
+  }

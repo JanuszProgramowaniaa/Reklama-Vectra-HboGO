@@ -1,0 +1,104 @@
+
+.Container{
+  background-color: black;
+  min-height: 100vh;
+
+
+.Header{
+  background-color: #1a1a1a;
+  min-height: 8vh;
+  color:white;
+  font-size:10px;
+  font-family: Verdana, sans-serif;
+}
+.Header-letter{
+  padding-top:10px;
+  color:grey;
+  margin-left:220px;
+}
+.Article{
+background-color: grey;
+min-height: 100vh;
+}
+
+footer{
+  background-color: #1a1a1a;
+  margin-top:2%;
+  min-height: 20vh;
+  color:grey;
+}
+
+
+.Pierwsze{
+min-height: 50vh;
+}
+
+.Drugie{
+padding:0;
+margin:0;
+min-height: 50vh;
+}
+
+.Trzecie{
+  background-color:#675190;
+  min-height: 45vh;
+  }
+
+.Czwarte{
+  background-color: purple;
+  min-height: 45vh;
+  }
+  
+.Piate{
+  background-color: #262626;
+  min-height: 35vh;
+  }  
+ .Szoste{
+  background-image: linear-gradient(black,#243134);
+  
+  min-height: 35vh;
+  }     
+  .Siudme{
+    background-color: white;
+    min-height: 35vh;
+    }      
+  
+  .leftfooter{
+    display:block;
+  font-size:10px;
+ padding-top:10px;
+ width:44.5%;
+ margin-left:250px;
+    }
+.rightfooter{
+  text-align: right;
+  width:22.5%;
+  font-size:10px;
+  padding-top:10px;
+  float:left;
+}
+   
+.rightbottomfotter{
+width:40%;
+margin-left:16.5%;
+}
+
+ul.footer{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+li.footer{
+  display:block;
+  float:left;
+  margin-top:-10px;
+  margin-left:10px;
+  font-size:12px;
+}
+.footer>a{
+  text-decoration: none;
+  color:grey;
+}
+
+}
+
