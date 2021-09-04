@@ -1,14 +1,16 @@
+@import "../../styles//variables";
+
 .Lte-Container{
   color:white;
 
  &>ul.b {
   list-style-type: square;
-  color:#84b82a;
+  color:$primary-color;
   
 }
 
 &>h1{
-  color:#84b82a;
+  color:$primary-color;
   padding:0;
   padding-top: 10px;
   padding-left: 10px;
@@ -18,7 +20,7 @@
 
 &>h2{
   padding:0;
-  color:#675190;
+  color:$secondary-color;
   font-size:12px;
   line-height: 0px;
   margin:0;
@@ -43,7 +45,7 @@
   align-items: top;
 
   .bottomright{
-    color:#675190;
+    color:$secondary-color;
     font-size:50px;
     margin:0;
     padding:0;
@@ -52,7 +54,7 @@
       font-weight: bold;
   }
   .bottomleft{
-    color:#84b82a;
+    color:$primary-color;
      padding-right: 10px;
    text-align: right;
    line-height: 20px;
@@ -60,7 +62,9 @@
   }
 }
 
-
+.row{
+  --bs-gutter-x:none;
+}
 
 }
 

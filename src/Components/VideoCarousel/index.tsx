@@ -1,13 +1,17 @@
 import React,{useState} from "react"
 import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {images} from "../../Helpers/VideoCarouselDat "
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined';
 import {Container,Row,Col} from 'react-bootstrap'
 import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRounded';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-function VideoCarousel(){
+interface IVideoCarousel  {
+    images :Array<any>;
+}
+
+
+export default function VdeoCarousel(props: IVideoCarousel): JSX.Element {
 
   const [currImg,setCurrImg]=useState(0);
 
@@ -27,10 +31,10 @@ function VideoCarousel(){
  
  </div>
      <div className="videocarouselInner"
-     style={{backgroundImage:`url(${images[currImg].img})` }}
+     style={{backgroundImage:`url(${props.images[currImg].img})` }}
      >
      <div className="arrow-down"></div>
-    <div className="left" style={{cursor:"pointer"}} onClick={()=>{
+    <div className="videocarouselInner left" style={{cursor:"pointer"}} onClick={()=>{
 
 currImg>0 && setCurrImg(currImg-1);
 
@@ -40,13 +44,13 @@ currImg>0 && setCurrImg(currImg-1);
 </div>
 <div className="right"  style={{cursor:"pointer"}} onClick={()=>{
 
-currImg<images.length-1 && setCurrImg(currImg+1);
+currImg<props.images.length-1 && setCurrImg(currImg+1);
 
 }}><ArrowForwardIosOutlinedIcon fontSize={"large"} /></div>
       
     
      </div>
-     <div className="VideoCarouselDescription">{images[currImg].title} <br/> <span style={{fontSize:"15px", color:"#84b82a",fontWeight:"bold"}}>Discover Channel </span></div>
+     <div className="VideoCarouselDescription">{props.images[currImg].title} <br/> <span className="primary-color" style={{fontSize:"15px",fontWeight:"bold"}}>Discover Channel </span></div>
   <div className="VideoCarouselBottom"></div>
       </div>
 
@@ -56,5 +60,3 @@ currImg<images.length-1 && setCurrImg(currImg+1);
 
   );
 }
-
-export default VideoCarousel;

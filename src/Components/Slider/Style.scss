@@ -1,9 +1,9 @@
-.slider{
+.slider-Container{
 
     width:100%;
     height:100%;
   
-}
+
 
 .sliderInner
 {
@@ -37,3 +37,12 @@
   .slideshowDot.active {
     background-color: white;
   }
+
+  .row{
+    --bs-gutter-x:none;
+}
+}
+
+.row{
+  --bs-gutter-x:none;
+}

@@ -1,9 +1,11 @@
+@import "../../styles/variables";
+
 .packagecard-Container{
 
  display:flex;
 
 
- }
+
  
  
 
@@ -26,7 +28,7 @@ button{
     display: block;
      margin: 0 auto;
      border:1px solid white; 
-     background-color:#4d3c6c;
+     background-color:$secondary-color;
      color:white;
      padding:5px;
      font-weight: bold;
@@ -56,7 +58,7 @@ button{
      color:white;
    font-size:12px;
    margin-top:-12px;
-   background-color:#675190;
+   background-color:$secondary-color;
  }
  
 
@@ -76,7 +78,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    color:#4d3c6c;
+    color:$secondary-color;
     height: 80px;
   width: 80px;
   background-color: white;
@@ -95,5 +97,7 @@ button{
   align-items: center;
 
  }
-
- 
+ .row{
+  --bs-gutter-x:none;
+}
+}

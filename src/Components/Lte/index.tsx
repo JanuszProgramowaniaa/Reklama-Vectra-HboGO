@@ -3,7 +3,12 @@ import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function Lte(props){
+interface ILte  {
+  
+}
+
+
+export default function Lte(props: ILte): JSX.Element {
 
   return (
 
@@ -32,4 +37,3 @@ function Lte(props){
   );
 }
 
-export default Lte;

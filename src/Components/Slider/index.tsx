@@ -1,13 +1,19 @@
 import React,{useState} from "react"
 import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {images} from "../../Helpers/SliderDat"
-function Slider(props){
 
 
-const delay = 1500;
+interface ISlider {
+  time :number;
+  images :Array<any>;
+}
+
+export default function Slider(props: ISlider): JSX.Element {
+
+
+  const delay  = props.time ;
   const [currImg,setCurrImg]=useState(0);
-  const timeoutRef = React.useRef(null);
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
   
   
   function resetTimeout() {
@@ -23,7 +29,7 @@ const delay = 1500;
     timeoutRef.current = setTimeout(
       () =>
       setCurrImg((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+          prevIndex === props.images.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -48,14 +54,14 @@ const delay = 1500;
   
    
 
-      <div className="slider" >
+      <div className="slider-Container" >
 
      <div className="sliderInner"
-     style={{backgroundImage:`url(${images[currImg].img})` }}
+     style={{backgroundImage:`url(${props.images[currImg].img})` }}
      >
     
     <div className="slideshowDots">
-        {images.map((_, idx) => (
+        {props.images.map((_:any, idx:number) => (
           <div
             key={idx}
             className={`slideshowDot${currImg === idx ? " active" : ""}`}
@@ -76,4 +82,3 @@ const delay = 1500;
   );
 }
 
-export default Slider;

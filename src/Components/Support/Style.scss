@@ -1,3 +1,5 @@
+@import "../../styles//variables.scss";
+
 .Support-Container{
   color:white;
 
@@ -7,19 +9,20 @@
   color:white;
   padding:0;
   padding-top: 10px;
-  padding-left: 10px;
- 
+  padding-left: 25px;
+  font-size:35px;
+  line-height: 15px;
   
 }
 
 &>h2{
   padding:0;
-  color:#84b82a;
+  color:$primary-color;
   font-size:12px;
-  line-height: 0px;
+  line-height: 14px;
 
 
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
 
@@ -31,9 +34,10 @@
 .bottom{
   display:absolute;
  text-align:center;
-  color:#84b82a;
+  color:$primary-color;
   font-size:13px;
-  margin-top: -20px;
+  margin-top: -5px;
+  font-family:sans-serif;
 }
 
 
@@ -50,6 +54,7 @@ img {
   height:110px;
   border:1px solid grey;
   margin:30px;
+  margin-top:10px;
   margin-left:20px;
   display: flex;
   justify-content: center;
@@ -60,20 +65,23 @@ img {
 
 
 .content{
-  margin-top:30px;
+  margin-top:10px;
   font-size:10px;
   display:flex;
   flex-direction: column;
+  font-family:sans-serif;
   
 }
 hr{
-  width:80%;
+  width:85%;
   color:grey;
   margin-top:5px;
   margin-bottom:5px;
   
 }
-
+.row{
+  --bs-gutter-x:none;
+}
 
 
 }

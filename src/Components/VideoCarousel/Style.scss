@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .carousel{
 
   width:100%;
@@ -43,7 +45,7 @@
  
 }
 .Top{
-  background-color: #84b82a;
+  background-color: $primary-color;
   width: 100%;
   height:30%;
   display:flex;
@@ -68,7 +70,7 @@
 .VideoCarouselBottom{
   width: 100%;
   height:1%;
-  background-color:#84b82a;
+  background-color:$primary-color;
 }
 
 .arrow-down {
@@ -76,7 +78,7 @@
   height: 0; 
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 5px solid #84b82a;
+  border-top: 5px solid $primary-color;
   position:absolute;
   left:50%;
 }
@@ -110,3 +112,4 @@
  line-height: 20px;
  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 100%);
 }
+  

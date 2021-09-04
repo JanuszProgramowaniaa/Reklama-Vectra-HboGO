@@ -6,7 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import obrazek from "../../Image/CapitanAmerica.jpg"
 import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined';
 import SmsOutlinedIcon from '@material-ui/icons/SmsOutlined';
-function Support(props){
+interface ISupport  {
+  image :string;
+}
+
+
+export default function Support(props: ISupport): JSX.Element {
 
   return (
 
@@ -16,7 +21,7 @@ function Support(props){
       <div className="Support-Container" >
           
         <h1>NASZ SUPPORT</h1>
-        <h2>Propozycje naszego TV-maniaka na weekend</h2>
+        <h2>PROPOZYCJE NASZEGO TV-MANIAKA <br/>NA WEEKEND</h2>
   
    <div className="center">
    <Container><Row>
@@ -39,4 +44,3 @@ function Support(props){
   );
 }
 
-export default Support;
