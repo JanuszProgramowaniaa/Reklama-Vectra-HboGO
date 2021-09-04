@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react"
+import React from "react"
 import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Row,Col} from 'react-bootstrap'
@@ -22,8 +22,8 @@ function PackageCard(props){
    <Container >
           <Row  >
     <Col md={12} ><h1>STWÓRZ SWÓJ WŁASNY PAKIET<h6>TELEWZJA - INTERNET - TELEFON</h6></h1></Col>
-    <Col md={12}  > <Row > <div style={{display:"flex",justifyContent:"space-evenly" }}> <div className="IconContent"><div className="PackageCircle"><div className="icon"><TvIcon fontSize="Large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div>  <span style={{color:"white",marginTop:"25px"}}> <AddOutlinedIcon fontSize="Large"/></span><div className="IconContent"><div className="PackageCircle"><div className="icon"><MouseIcon fontSize="Large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div> <span style={{color:"white",marginTop:"25px"}}><AddOutlinedIcon fontSize="Large"/> </span><div className="IconContent"><div className="PackageCircle"><div className="icon"><PhoneInTalkIcon fontSize="Large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div><span style={{color:"white",marginTop:"25px"}}><AddOutlinedIcon fontSize="Large"/></span> <div className="IconContent"><div className="PackageCircle"><div className="icon"><SettingsInputAntennaIcon fontSize="Large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div>  </div> </Row>   </Col>
-    <Col md={12}  >  <button onClick={()=>{alert("No to ziuup")}}>STWÓRZ PAKIET</button><h6 className="underbutton">lub wybierz pakiet, przygotowany przez nas</h6></Col>
+    <Col md={12}  > <Row > <div style={{display:"flex",justifyContent:"space-evenly" }}> <div className="IconContent"><div className="PackageCircle"><div className="icon"><TvIcon fontSize="large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div>  <span style={{color:"white",marginTop:"25px"}}> <AddOutlinedIcon fontSize="large"/></span><div className="IconContent"><div className="PackageCircle"><div className="icon"><MouseIcon fontSize="large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div> <span style={{color:"white",marginTop:"25px"}}><AddOutlinedIcon fontSize="large"/> </span><div className="IconContent"><div className="PackageCircle"><div className="icon"><PhoneInTalkIcon fontSize="large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div><span style={{color:"white",marginTop:"25px"}}><AddOutlinedIcon fontSize="large"/></span> <div className="IconContent"><div className="PackageCircle"><div className="icon"><SettingsInputAntennaIcon fontSize="large"/></div></div> <span className="select">WYBIERZ</span><span className="option">ULUBIONE<br/>KANAŁY TV</span></div>  </div> </Row>   </Col>
+    <Col md={12}  >  <button onClick={()=>{alert("No to ziuup")}}>STWÓRZ PAKIET</button><span className="underbutton">lub wybierz pakiet, przygotowany przez nas</span></Col>
       </Row>
 </Container>
       </div>

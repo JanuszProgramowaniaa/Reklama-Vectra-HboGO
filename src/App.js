@@ -15,6 +15,7 @@ import TabletIcon from '@material-ui/icons/Tablet';
 import PhoneIcon from '@material-ui/icons/Phone';
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
 import HamburgerMenu from "./Components/HamburgerMenu"
+
 function App() {
 
  
@@ -76,8 +77,8 @@ function App() {
    <hr style={{marginTop:"5%"}} /></div>
   
    <div className="rightfooter" > Centrum obsługi klienta <span style={{color:"#84b82a"}}><br/>ZADZWOŃ LUB WYŚLIJ SMS </span><br/><span style={{color:"#84b82a",fontSize:"20px",fontWeight:"bold"}}><PhoneIcon/> 800 080 800</span><br/> <div style={{marginTop:"5px",lineHeight:"13px"}}> <span style={{fontSize:"10px"}}>Z TELEFONU KOMÓRKOWEGO </span><br/><span style={{fontSize:"16px",fontWeight:"bold",color:"#84b82a"}}>58 500 65 00 </span><br/><span style={{fontSize:"8px"}}>(wg stawek operatorów)</span></div> </div>
-  <div className="rightbottomfotter">      <ul  className="footer"><a href="#"><li className="footer" style={{marginLeft:"0px"}}>O nas</li></a> <a href="#"><li className="footer">Kontakt</li></a> <a href="#"><li className="footer">Kariera</li></a> <a href="#"><li className="footer">Dla mediów</li>  </a></ul></div>
-
+  <div className="rightbottomfotter">      <ul  className="footer"><a href="#"><li className="footer" style={{marginLeft:"0px"}}>O nas</li></a> <a href="#"><li className="footer">Kontakt</li></a> <a href="#"><li className="footer">Kariera</li></a> <a href="#"><li className="footer">Dla mediów</li> 
+ </a></ul></div>  
   </footer>
 
 

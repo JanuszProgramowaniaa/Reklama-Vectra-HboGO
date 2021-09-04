@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react"
+import React from "react"
 import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,7 +15,7 @@ function Lte(props){
         <h1>PAKIET 20 GB LTE</h1>
         <h2>PROMOCJA</h2>
         <h3>Dla tych którzy nie wyobrażaja sobie życia bez internetu</h3>
-        <ul class="b">
+        <ul className="b">
   <li ><span className="liinfo">Oglądaj filmy umieszczone w sieci</span></li>
   <li><span className="liinfo">Ściągaj duże pliki</span></li>
   <li><span className="liinfo">Korzystaj z poczty komunikatora</span></li>

@@ -33,12 +33,15 @@ button{
      margin-top: 15px;
  }
 
- h6.underbutton{
+ .underbutton{
+   display:block;
      color:white;
      text-align:center;
      font-size:18px;
      padding-top:5px;
      font-weight: 400;
+     margin: 0 auto;
+     padding-bottom: 15px;
      
  }
 

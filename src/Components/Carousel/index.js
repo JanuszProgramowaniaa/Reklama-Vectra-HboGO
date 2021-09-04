@@ -32,7 +32,7 @@ function Carousel(){
 currImg<images.length-1 && setCurrImg(currImg+1);
 
 }}><ArrowForwardIosOutlinedIcon fontSize={"large"} />
-<div className="CarouselDescription" style={{position:"absolute",bottom:0,left:0} }><div style={{width:"70%",float:"left"}}> Kapitan Ameryka: <br/> Zimowy Żołnierz<br/><span style={{color:"#84b82a",fontSize:"10px"}}> Nowości - Akcja</span> <span style={{color:"#2c8fbd",fontSize:"10px",marginLeft:"10px"}}>14.00zł</span></div><div style={{width:"30%",float:"left",borderLeft:"1px solid grey",textAlign:"center",fontSize:"8px",lineHeight:"12px",color:"#8f8f8f"}}>FILM <br/>OBEJRZY<br/><span style={{color:"white",fontSize:"15px"}}>125<br/><SupervisorAccountRoundedIcon/></span></div></div>
+<div className="CarouselDescription" style={{position:"absolute",bottom:0,left:0} }><div style={{width:"70%",float:"left"}}> Kapitan Ameryka: <br/> Zimowy Żołnierz<br/><span style={{color:"#84b82a",fontSize:"10px"}}> NOWOŚCI - AKCJA</span> <span style={{color:"#2c8fbd",fontSize:"10px",marginLeft:"10px"}}>14.00zł</span></div><div style={{width:"30%",float:"left",borderLeft:"1px solid grey",textAlign:"center",fontSize:"8px",lineHeight:"12px",color:"#8f8f8f"}}>FILM <br/>OBEJRZY<br/><span style={{color:"white",fontSize:"15px"}}>125<br/><SupervisorAccountRoundedIcon/></span></div></div>
 </div>
   
      </div>

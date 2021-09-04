@@ -36,7 +36,7 @@ currImg>0 && setCurrImg(currImg-1);
 
 }}>
 <ArrowBackIosOutlinedIcon fontSize={"large"}  /></div>
-<div className="center"><a href="#" class="round-button" onClick={()=>{alert("Trzeba napisać playera xD")}}><PlayArrowIcon fontSize="large"/></a>
+<div className="center"><a href="#" className="round-button" onClick={()=>{alert("Trzeba napisać playera xD")}}><PlayArrowIcon fontSize="large"/></a>
 </div>
 <div className="right"  style={{cursor:"pointer"}} onClick={()=>{
 
