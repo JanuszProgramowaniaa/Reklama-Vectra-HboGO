@@ -5,6 +5,7 @@ import {Container,Row,Col} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import obrazek from "../../Image/CapitanAmerica.jpg"
 import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined';
+import SmsOutlinedIcon from '@material-ui/icons/SmsOutlined';
 function Support(props){
 
   return (
@@ -19,15 +20,17 @@ function Support(props){
   
    <div className="center">
    <Container><Row>
-    <Col><img src={obrazek}></img></Col>
+    <Col><div><div className="circle"><img src={obrazek}></img></div></div></Col>
  
-   <Col><div className="content"> <Col>ZOBACZ CO KUBA<br/> ZNALAZŁ CIEKAWEGO<br/> W TV NA WEEKEND </Col> <hr/> <Col>PODYSKUTUJ Z NIM<br/> O FILMACH JUŻ<br/> W PIATEK 15.09.2014 </Col>  </div></Col>
+   <Col><div className="content"> <Col><div style={{display:"flex",alignItems:"center"}}><div>ZOBACZ CO KUBA<br/> ZNALAZŁ CIEKAWEGO<br/> W TV NA WEEKEND</div> <div style={{marginLeft:"10px"}}><ArrowForwardIosOutlinedIcon fontSize={"large"} /></div></div></Col> <hr/> <Col><div style={{display:"flex",alignItems:"center"}}><div>PODYSKUTUJ Z NIM<br/> O FILMACH JUŻ<br/> W PIATEK 15.09.2014</div> <div style={{marginLeft:"10px"}}><SmsOutlinedIcon fontSize={"large"}/> </div></div></Col>  </div></Col>
+<div className="bottom">Zostań naszym ekspertem i poprowadź <br/> przeedwekendowy chat z użytkownikami</div>
 </Row>
+
    </Container>
    
   
 
-   <div className="bottom">Zostań naszym ekspertem i poprowadź <br/> przeedwekendowy chat z użytkownikami</div>
+   
       </div>
 
  </div>

@@ -29,22 +29,35 @@
   }
 
 .bottom{
-  display:block;
+  display:absolute;
  text-align:center;
   color:#84b82a;
   font-size:13px;
-  line-height: 15px;
+  margin-top: -20px;
 }
 
 
 
 img {
   border-radius: 50%;
-  width:100px;
-  height:100px;
-  margin:30px;
-  float:left;
+  width:80px;
+  height:80px;
+ 
 }
+.circle{
+  border-radius: 50%;
+  width:110px;
+  height:110px;
+  border:1px solid grey;
+  margin:30px;
+  margin-left:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 
 .content{
   margin-top:30px;
@@ -58,7 +71,10 @@ hr{
   color:grey;
   margin-top:5px;
   margin-bottom:5px;
+  
 }
+
+
 
 }
 
