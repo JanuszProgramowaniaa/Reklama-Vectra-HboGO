@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import {useState} from "react"
 import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
@@ -29,7 +29,7 @@ export default function Carousel(props: ICarousel): JSX.Element {
 
      }}>
      <ArrowBackIosOutlinedIcon fontSize={"large"} /></div>
-       <div className="center"></div>
+       <div className="center"><div className="buy">KUP FILM</div></div>
        <div className="right" style={{cursor:"pointer"}} onClick={()=>{
 
 currImg<props.images.length-1 && setCurrImg(currImg+1);

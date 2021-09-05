@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import {useState} from "react"
 import './Style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
