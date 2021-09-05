@@ -29,7 +29,7 @@ export default function Carousel(props: ICarousel): JSX.Element {
 
      }}>
      <ArrowBackIosOutlinedIcon fontSize={"large"} /></div>
-       <div className="center"><div className="buy">KUP FILM</div></div>
+       <div className="center"><div className="buy" onClick={()=>{alert("No too ziuppp")}}>KUP FILM</div></div>
        <div className="right" style={{cursor:"pointer"}} onClick={()=>{
 
 currImg<props.images.length-1 && setCurrImg(currImg+1);
